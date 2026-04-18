@@ -1,0 +1,21 @@
+{
+  "name": "memex",
+  "version": "1.0.0",
+  "description": "MemeX monorepo (Node backend + React frontend)",
+  "scripts": {
+    "dev": "concurrently \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\"",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "start": "concurrently \"npm --prefix backend run start\" \"npm --prefix frontend run dev\""
+  },
+  "private": true,
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "dependencies": {
+    "@google/genai": "^1.50.1",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
+  }
+}
